@@ -1,19 +1,15 @@
 {
-  "name": "@monax/legacy-contracts",
-  "description": "Library with javascript bindings for Solidity contracts.",
-  "version": "0.16.8",
-  "author": {
-    "name": "Andreas Olofsson"
-  },
+  
   "bugs": {
-    "url": "https://github.com/monax/legacy-contracts.js/issues"
+    "url": "https://github.com/pouladzade/gnet-contracts.js/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
-    "@monax/legacy-db": "0.16.4",
     "@nodeguy/generic": "3.0.0",
     "@nodeguy/type": "0.2.0",
-    "bignumber.js": "debris/bignumber.js#94d7146671b9719e00a09c29b01a691bc85048c2",
+    "bignumber.js": "github:debris/bignumber.js#94d7146671b9719e00a09c29b01a691bc85048c2",
     "bluebird": "3.5.0",
+    "gnet-db": "0.0.1",
     "crypto-js": "3.1.4",
     "g-functions": "0.3.0",
     "iteray": "0.5.1",
@@ -21,6 +17,8 @@
     "utf8": "2.1.2",
     "web3": "0.18.4"
   },
+  "deprecated": false,
+  "description": "Library with javascript bindings for Solidity contracts.",
   "devDependencies": {
     "@nodeguy/assert": "0.1.1",
     "bundle-dependencies": "1.0.2",
@@ -40,40 +38,23 @@
   "engines": {
     "node": ">=6"
   },
-  "homepage": "https://github.com/monax/legacy-contracts.js",
-  "keywords": [
-    "Burrow",
-    "Hyperledger",
-    "Monax",
-    "solidity"
+  "homepage": "https://github.com/pouladzade/gnet-contracts.js",
+  "keywords": [ 
+  "gallactic",
+  "gnet"
   ],
   "license": "LGPL-3.0",
   "main": "index.js",
   "maintainers": [
     {
-      "name": "David Braun",
-      "email": "David@Monax.io"
+      "name": "Ahmad Pouladzadeh",
+      "email": "pouladzade@gmail.com"
     }
   ],
+  "name": "gnet-contracts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/monax/legacy-contracts.js"
+    "url": "git+https://github.com/pouladzade/gnet-contracts.js.git"
   },
-  "scripts": {
-    "doc": "jsdoc --configure JSDoc/conf.json --destination doc index.js lib README.md",
-    "precommit": "standard",
-    "pretest": "standard",
-    "test": "mocha --recursive --reporter mocha-circleci-reporter"
-  },
-  "standard": {
-    "globals": [
-      "after",
-      "afterEach",
-      "before",
-      "beforeEach",
-      "describe",
-      "it",
-      "run"
-    ]
-  }
+  "version": "0.0.1"
 }
